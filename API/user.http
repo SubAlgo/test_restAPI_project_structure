@@ -1,0 +1,9 @@
+### Get all user list
+GET http://localhost:8000/api/user/list
+Content-Type: application/json
+X-Token:
+
+{
+}
+
+###

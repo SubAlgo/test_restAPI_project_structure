@@ -1,0 +1,49 @@
+GET http://localhost:8000/api/book?id=1
+Content-Type: application/json
+X-Token:
+
+{
+}
+
+###
+
+GET http://localhost:8000/api/book
+Content-Type: application/json
+X-Token:
+
+{
+}
+
+###
+
+POST http://localhost:8000/api/book
+Content-Type: application/json
+X-Token:
+
+{
+  "title": "aud",
+  "author": "SubAlgo"
+}
+
+###
+
+PUT http://localhost:8000/api/book
+Content-Type: application/json
+X-Token:
+
+{
+  "id": 1,
+  "title": "Golang 101",
+  "author": "SubAlgo"
+}
+
+
+###
+
+DELETE http://localhost:8000/api/book
+Content-Type: application/json
+X-Token:
+
+{
+  "id": 2
+}

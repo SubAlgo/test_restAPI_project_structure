@@ -1,0 +1,50 @@
+### Create new employee
+POST http://localhost:8000/api/user/employee
+Content-Type: application/json
+X-Token:
+
+{
+  "name": "master01_name",
+  "lastname": "master01_lastname",
+  "email": "master01@gmail.com",
+  "role": "master",
+  "salary": 70000.00
+}
+
+### Get user data by id
+GET http://localhost:8000/api/user/employee?id=3
+Content-Type: application/json
+X-Token:
+
+{
+}
+
+### Get employee list
+GET http://localhost:8000/api/user/employee
+Content-Type: application/json
+X-Token:
+
+{
+}
+
+### Update employee data
+PUT http://localhost:8000/api/user/employee
+Content-Type: application/json
+X-Token:
+
+{
+  "id": 3,
+  "name": "master01_name",
+  "lastname": "master01_lastname",
+  "email": "master01@gmail.com"
+}
+
+
+### Delete user data
+DELETE http://localhost:8000/api/user/employee
+Content-Type: application/json
+X-Token:
+
+{
+  "id": 5
+}
